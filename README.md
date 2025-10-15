@@ -1,68 +1,76 @@
-# 📄 Pahenji Akhbar – Preprocessed Sindhi News Dataset (1923 txt files)
+# 📰 Pahenji Akhbar – Preprocessed Sindhi News Dataset
 
-### 📰 Source: Pahenji Akhbar (Online Sindhi Newspaper)  
-Website: [epaper.pahenjiakhbar.com](https://epaper.pahenjiakhbar.com/) :contentReference[oaicite:0]{index=0}  
+### 🏛️ Source: [Pahenji Akhbar (Sindhi Newspaper)](https://epaper.pahenjiakhbar.com/)  
 ### 📤 Prepared & Uploaded by: *Abdul Majid Bhurgiri, Institute of Language Engineering*  
+### 🌐 Official Uploading Credit: [ambile.pk](https://ambile.pk/)  
 ### 📅 Release Year: 2025  
 ### 🌍 Language: Sindhi (سنڌي)  
-### 📦 Dataset Type: Preprocessed News & Articles Corpus
+### 📦 Dataset Type: Preprocessed News & Articles Corpus  
 
 ---
 
 ## 📖 Overview
 
-This repository contains a cleaned and preprocessed corpus of **Pahenji Akhbar** news articles and content in Sindhi. The raw data has been processed to remove noise and normalize text, making it suitable for **NLP model training**, research, and language engineering applications.
+The **Pahenji Akhbar Dataset** is a comprehensive and preprocessed collection of **Sindhi news articles and editorial content** extracted from the *Pahenji Akhbar* publication.  
 
-The dataset aims to support tasks such as language modeling, classification, summarization, and more in the Sindhi language domain.
-
----
-
-## 🧹 Preprocessing & Cleaning
-
-To ensure high data quality, the following cleaning steps were applied:
-
-- Removal of **email addresses**, **URLs** and **links**  
-- Elimination of **special characters**, symbols, and **emojis**  
-- Filtering out segments in **other languages** (non-Sindhi text)  
-- Normalization of Sindhi **Unicode characters**  
-- Removal of unnecessary whitespace, repeated punctuation, and formatting artifacts  
-- Ensuring **UTF-8 encoding** for all text content  
-
-The final output is a clean, consistent Sindhi-language news corpus ready for downstream NLP tasks.
+This dataset has been cleaned, standardized, and structured for **Natural Language Processing (NLP)** and **AI language research**.  
+It provides high-quality Sindhi text ideal for tasks such as **language modeling**, **summarization**, **classification**, and **machine translation**.
 
 ---
 
-## 📁 Dataset Structure & Files
+## 🧹 Data Cleaning & Preprocessing
+
+The dataset was carefully preprocessed to ensure quality and model-readiness.  
+All irrelevant or noisy data were removed, including:
+
+- ✅ Email addresses  
+- ✅ URLs and external links  
+- ✅ Special characters and punctuation noise  
+- ✅ Emojis and symbols  
+- ✅ Non-Sindhi or foreign language content  
+- ✅ Extra line breaks and unnecessary spaces  
+- ✅ Normalized Sindhi Unicode text  
+- ✅ Standardized to **UTF-8** encoding  
+
+This makes the dataset clean, consistent, and ready for direct use in Sindhi NLP pipelines.
+
+---
+
+## 📂 Dataset Contents
 
 | File Name | Description | Format | Encoding |
-|-----------|-------------|--------|-----------|
-| `PahenjiAkhbar_Preprocessed.txt` | Cleaned Sindhi news corpus from Pahenji Akhbar articles | `.txt` | UTF-8 |
+|------------|-------------|---------|-----------|
+| `PahenjiAkhbar_Preprocessed.txt` | Cleaned Sindhi news and article corpus from Pahenji Akhbar | `.txt` | UTF-8 |
 
-Each line (or paragraph) in the text file corresponds to a cleaned news segment from the original source.
-
-You may add supplemental metadata files later (e.g., article dates, sources, titles) if available.
+Each line or paragraph represents a preprocessed Sindhi article segment.
 
 ---
 
 ## 🧠 Research & Application Use Cases
 
-This dataset can be used for:
+This dataset supports a wide range of **Sindhi AI and NLP applications**, including:
 
-- 🗣️ **Language Modeling / Sindhi LLMs**  
-- 💬 **News Summarization & Headline Generation**  
-- 📊 **Sentiment / Tone Classification**  
-- 🌐 **Machine Translation** (Sindhi ↔ English, Sindhi ↔ Urdu)  
-- 🌍 **Named Entity Recognition**, **Topic Modeling**, **Information Extraction**  
-- 🧩 **Embedding Training** for Sindhi text  
+- 🗣️ **Language Modeling** — Train Sindhi GPT or transformer-based models  
+- 💬 **Conversational Systems** — Build Sindhi chatbots and dialogue engines  
+- 📊 **Sentiment Analysis** — Detect tone, emotion, and opinion in news content  
+- 📰 **Summarization Models** — Generate Sindhi news summaries automatically  
+- 🌐 **Machine Translation** — Develop Sindhi ↔ English or Sindhi ↔ Urdu systems  
+- 🧩 **Embedding & Tokenization Research** — Enhance multilingual embedding models  
 
 ---
 
-## ⚙️ Example Usage (Python)
+## ⚙️ Technical Details
 
+- **Data Source:** Pahenji Akhbar (Official Sindhi Newspaper)  
+- **Text Domain:** News, opinions, culture, and editorial articles  
+- **File Format:** Plain text (`.txt`)  
+- **Encoding:** UTF-8  
+- **Data Size:** Depends on total collected articles (expandable corpus)  
+- **Preprocessing Quality:** Manually verified and standardized  
+
+### Example (Python)
 ```python
 with open("PahenjiAkhbar_Preprocessed.txt", "r", encoding="utf-8") as f:
-    corpus = f.readlines()
+    text = f.read()
 
-# Example: print first 3 segments
-for i in range(3):
-    print(corpus[i])
+print(text[:500])  # Preview the first 500 characters
