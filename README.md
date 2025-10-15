@@ -1,11 +1,11 @@
-# 📰 Pahenji Akhbar – Preprocessed Sindhi News Dataset
+# 📰 Pahenji Akhbar – Preprocessed Sindhi News Dataset 
 
 ### 🏛️ Source: [Pahenji Akhbar (Sindhi Newspaper)](https://epaper.pahenjiakhbar.com/)  
 ### 📤 Prepared & Uploaded by: *Abdul Majid Bhurgiri, Institute of Language Engineering*  
 ### 🌐 Official Uploading Credit: [ambile.pk](https://ambile.pk/)  
 ### 📅 Release Year: 2025  
 ### 🌍 Language: Sindhi (سنڌي)  
-### 📦 Dataset Type: Preprocessed News & Articles Corpus  
+### 📦 Dataset Type: Preprocessed News & Articles Corpus  (1923 txt files)
 
 ---
 
