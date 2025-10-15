@@ -1,4 +1,4 @@
-# 📄 Pahenji Akhbar – Preprocessed Sindhi News Dataset
+# 📄 Pahenji Akhbar – Preprocessed Sindhi News Dataset (1923 txt files)
 
 ### 📰 Source: Pahenji Akhbar (Online Sindhi Newspaper)  
 Website: [epaper.pahenjiakhbar.com](https://epaper.pahenjiakhbar.com/) :contentReference[oaicite:0]{index=0}  
